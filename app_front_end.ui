@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App progress bar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#main_widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(144, 207, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+
+QPushButton {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 10px;
+  font-size: 14px;
+}
+QPushButton:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+QLineEdit{
+  border-radius: 10px;
+}
+
+QLabel{
+  color:#2F72A0;
+
+}
+
+QProgressBar{
+  border: 2px solid;
+  border-radius:10px;
+  background-color:#323232;
+}
+
+QProgressBar::chunk {
+  border-radius:20px;
+  background-color:white;
+  margin: 0.5px;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="main_widget">
+   <widget class="QPushButton" name="start_button">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="app_progress_bar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>331</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title_label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>App </string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
