@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#main_widget{
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(144, 207, 255, 255), stop:1 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(19, 138, 242, 0.8), stop:1 rgba(255, 255, 255, 255));
 }
 
 
@@ -36,7 +36,7 @@ QLineEdit{
 }
 
 QLabel{
-  color:#2F72A0;
+  color:#000000;
 
 }
 
@@ -55,42 +55,26 @@ QProgressBar::chunk {
 </string>
   </property>
   <widget class="QWidget" name="main_widget">
-   <widget class="QPushButton" name="start_button">
+   <widget class="QPushButton" name="parse_images">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>160</y>
-      <width>93</width>
-      <height>28</height>
+      <x>110</x>
+      <y>130</y>
+      <width>231</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="app_progress_bar">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>90</y>
-      <width>331</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
-    <property name="textVisible">
-     <bool>false</bool>
+     <string>Download Images</string>
     </property>
    </widget>
    <widget class="QLabel" name="title_label">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>10</y>
-      <width>91</width>
-      <height>61</height>
+      <x>300</x>
+      <y>20</y>
+      <width>181</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -101,7 +85,36 @@ QProgressBar::chunk {
      </font>
     </property>
     <property name="text">
-     <string>App </string>
+     <string>Launcher</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_images">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>130</y>
+      <width>231</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parse Images</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="app_progress_bar">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>

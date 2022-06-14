@@ -13,3 +13,12 @@ class AppBackEnd(QThread):
 			self.loading.emit(index)
 			time.sleep(0.1)
 
+class Downloader(QThread):
+
+	def __init__(self):
+		super(Downloader, self).__init__()
+
+	def download(self):
+		return
+
+
